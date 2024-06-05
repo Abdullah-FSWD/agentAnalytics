@@ -22,8 +22,9 @@ const ProductDetail = () => {
         />
         <div className="md:ml-4">
           <h2 className="text-2xl font-bold">{product.name}</h2>
-          <p className="text-xl">{product.price}</p>
-          <p>{product.description}</p>
+          <p className="text-xl">${product.price}</p>
+          <h4>{product.description.shortDesc}</h4>
+          <p>{product.description.detailDesc}</p>
           <button className="bg-[#416D19] text-white p-2 rounded mt-4">
             Buy Now
           </button>

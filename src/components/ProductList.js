@@ -15,10 +15,6 @@ const ProductList = () => {
 
   return (
     <div className="container mx-auto p-4">
-      <div className="flex justify-end mb-4">
-        <button className="bg-[#416D19] text-white p-2 rounded">Sort</button>
-      </div>
-
       {status === "loading" ? (
         <Skeleton />
       ) : (
@@ -26,22 +22,22 @@ const ProductList = () => {
           {products.map((product) => (
             <div
               key={product.id}
-              className="border p-4 shadow-lg rounded-lg w-full h-80 flex flex-col items-center transition-transform transform hover:scale-105">
+              className="border p-4 shadow-lg rounded-lg w-full h-80 flex flex-col items-center transition-transform transform ">
               <img
                 src={product.image}
                 alt={product.name}
-                className="mb-4 h-32 w-full object-cover rounded-md"
+                className="mb-4 h-32 w-full object-cover rounded-md hover:scale-105"
               />
               <h2 className="text-lg font-bold mb-1 text-center">
                 {product.name}
               </h2>
               <p className="text-gray-600 mb-2 text-center">${product.price}</p>
               <p className="text-sm text-gray-500 mb-4 text-center truncate">
-                {product.description}
+                {product.description.shortDesc}
               </p>
               <Link
                 to={`/product/${product.id}`}
-                className="text-white bg-[#9BCF53] p-2 rounded mt-auto block text-center">
+                className="text-white bg-[#9BCF53] p-2 rounded mt-auto block text-center hover:scale-105">
                 View Details
               </Link>
             </div>
