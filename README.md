@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+## Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains a Product Page application built using React, Tailwind CSS, and a JSON server for mock API data. The application is fully responsive and works seamlessly across all screen sizes.
 
-## Available Scripts
+## Features
+  1. React: Utilized for building the dynamic user interface.
+  2. Tailwind CSS: Used for styling the application with utility-first CSS framework.
+  3. JSON Server: Implemented to create a mock API for serving product data.
+  4. Responsive Design: Ensured the application is fully responsive and looks great on all devices.
 
-In the project directory, you can run:
+### Example
 
-### `npm start`
+  1. Product Page
+     ![image](https://github.com/Abdullah-FSWD/agentAnalytics/assets/93380704/59149b3e-1b41-42d2-bc8c-db70166ccab2)
+  2. Detail Page
+     ![image](https://github.com/Abdullah-FSWD/agentAnalytics/assets/93380704/809ced9c-133d-420f-b66b-83e9e21ef9a0)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+### Getting Started
+  1. Clone the repository:
+     ```base
+       git clone https://github.com/Abdullah-FSWD/agent-analytics.git
+       cd agent-analytics
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  2. Install the dependencies:
+     ```base
+       npm install
+     # or if you prefer yarn
+      yarn install
 
-### `npm run build`
+  3. Start the application:
+     ```base
+     npm start
+    # or if you prefer yarn
+    yarn start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  this will start the react server as well as the JSON server.
+   - React server will run `http://localhost:3000`
+   - JSON server will run `http://localhost:4000/products`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Contact
+  For any inquiries or feedback, feel free to reach out to:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  Name: Md Abdullah Ansari
+  Email: ansarimdabdullah794@gmail.com
+  GitHub: Abdullah-FSWD
 
-### `npm run eject`
+  
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  
