@@ -12,6 +12,18 @@ export const fetchProducts = createAsyncThunk(
   }
 );
 
+// Async thunk to add a new product
+export const addProduct = createAsyncThunk(
+  "products/addProduct",
+  async (newProduct) => {
+    const response = await axios.post(
+      "https://productmockapi.onrender.com/api/products",
+      newProduct
+    );
+    return response.data;
+  }
+);
+
 const productSlice = createSlice({
   name: "products",
   initialState: {
@@ -41,6 +53,9 @@ const productSlice = createSlice({
       .addCase(fetchProducts.rejected, (state, action) => {
         state.status = "failed";
         state.error = action.error.message;
+      })
+      .addCase(addProduct.fulfilled, (state, action) => {
+        state.items.push(action.payload);
       });
   },
 });
